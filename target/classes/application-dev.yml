@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=Blogs
+    username: sa
+    password: sa!123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.lrm: debug
+  file: log/blog-dev.log
+
+
+
